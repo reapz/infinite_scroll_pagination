@@ -18,16 +18,13 @@ class FirstPageExceptionIndicator extends StatelessWidget {
     final message = this.message;
     return Center(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: 32,
-          horizontal: 16,
-        ),
+        padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
         child: Column(
           children: [
             Text(
               title,
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.headline6,
             ),
             if (message != null)
               const SizedBox(

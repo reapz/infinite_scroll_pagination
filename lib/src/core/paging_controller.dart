@@ -202,7 +202,7 @@ class PagingController<PageKeyType, ItemType>
   void notifyPageRequestListeners(PageKeyType pageKey) {
     assert(_debugAssertNotDisposed());
 
-    if (_pageRequestListeners?.isEmpty ?? true) {
+    if (_pageRequestListeners!.isEmpty) {
       return;
     }
 
